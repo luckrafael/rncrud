@@ -43,15 +43,11 @@ export default props => {
                 key={user.id}
                 bottomDivider
                 onPress={() => props.navigation.navigate('UserForm', user)}
-            // right={getActions(user)}
             >
                 <Avatar source={{ uri: user.avatarUrl }} />
                 <ListItem.Content >
                     <ListItem.Title>{user.name}</ListItem.Title>
                     <ListItem.Subtitle>{user.email}</ListItem.Subtitle>
-                    {/* <ListItem right>
-                        {getActions(user)}
-                    </ListItem> */}
                 </ListItem.Content>
                 <ListItem.Content right>
                     <ListItem.Title>{getActions(user)}</ListItem.Title>
